@@ -36,7 +36,7 @@
     //#define BI
     //#define TRI
     //#define QUADP
-    #define QUADX
+    //#define QUADX
     //#define Y4
     //#define Y6
     //#define HEX6
@@ -58,9 +58,9 @@
        This is the minimum value that allow motors to run at a idle speed  */
     //#define MINTHROTTLE 1300 // for Turnigy Plush ESCs 10A
     //#define MINTHROTTLE 1120 // for Super Simple ESCs 10A
-    #define MINTHROTTLE 1064 // special ESC (simonk)
+    //#define MINTHROTTLE 1064 // special ESC (simonk)
     //#define MINTHROTTLE 1050 // for brushed ESCs like ladybird
-    //#define MINTHROTTLE 1150 // (*) (**)
+    #define MINTHROTTLE 1150 // (*) (**)
 
   /****************************    Motor maxthrottle    *******************************/
     /* this is the maximum value for the ESCs at full power, this value can be increased up to 2000 */
@@ -72,8 +72,8 @@
     #define MINCOMMAND  1000
 
   /**********************************    I2C speed   ************************************/
-    //#define I2C_SPEED 100000L     //100kHz normal mode, this value must be used for a genuine WMP
-    #define I2C_SPEED 400000L   //400kHz fast mode, it works only with some WMP clones
+    #define I2C_SPEED 100000L     //100kHz normal mode, this value must be used for a genuine WMP
+    //#define I2C_SPEED 400000L   //400kHz fast mode, it works only with some WMP clones
 
   /***************************    Internal i2c Pullups   ********************************/
     /* enable internal I2C pull ups (in most cases it is better to use external pullups) */
@@ -146,7 +146,7 @@
       //#define MEGAWAP_V2_STD     // available here: http://www.multircshop.com                    <- confirmed by Alex
       //#define MEGAWAP_V2_ADV
       //#define HK_MultiWii_SE_V2  // Hobbyking board with MPU6050 + HMC5883L + BMP085
-      #define HK_MultiWii_328P   // Also labeled "Hobbybro" on the back.  ITG3205 + BMA180 + BMP085 + NMC5583L + DSM2 Connector (Spektrum Satellite)  
+      //#define HK_MultiWii_328P   // Also labeled "Hobbybro" on the back.  ITG3205 + BMA180 + BMP085 + NMC5583L + DSM2 Connector (Spektrum Satellite)  
       //#define RCNet_FC           // RCNet FC with MPU6050 and MS561101BA  http://www.rcnet.com
       //#define RCNet_FC_GPS       // RCNet FC with MPU6050 + MS561101BA + HMC5883L + UBLOX GPS http://www.rcnet.com
       //#define FLYDU_ULTRA        // MEGA+10DOF+MT3339 FC
